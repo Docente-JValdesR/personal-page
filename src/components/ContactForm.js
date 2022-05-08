@@ -1,14 +1,10 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
-const id = process.env.REACT_APP_MAIL_ID;
-const template = process.env.REACT_APP_MAIL_TEMPLATE;
-const key = process.env.REACT_APP_MAIL_KEY;
 
 export default function ContacForm() {
   const initialStateValues = {
     name: " ",
-
     email: " ",
     description: " ",
     business: " ",
@@ -45,33 +41,44 @@ export default function ContacForm() {
     setValues({ ...values, [name]: value });
   };
   function sendEmail(e) {
+    e.preventDefault();
     emailjs
-      .sendForm(id, template, e.target, key)
+      .sendForm(
+        "service_pfv1ek8",
+        "template_svyda2g",
+        e.target,
+        "OllNoPF79CDtGd45S"
+      )
       .then((res) => {
         console.log(res);
-        sweetAlert();
+        sweetAlertConfirm();
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err);
+        sweetAlertError();
+      });
   }
-  function sweetAlert(e) {
-    e.preventDefault();
+  function sweetAlertConfirm() {
     Swal.fire({
       icon: "success",
-      title: "Gracias, Estaré en contacto",
+      title: "Gracias por escribirme, Estaré en contacto!!",
       showConfirmButton: false,
-      showCancelButton: true,
-      timer: 2000,
-      toast: true,
+      showCloseButton: true,
+      timer: 4000,
     });
-    sendEmail(e);
-    handleSubmit();
   }
-  function handleSubmit() {
-    setValues({ ...initialStateValues });
+  function sweetAlertError() {
+    Swal.fire({
+      icon: "error",
+      title: "ha ocurrido un error, inténtalo más tarde",
+      showConfirmButton: false,
+      showCloseButton: true,
+      timer: 4000,
+    });
   }
   return (
     <div className="col-12 col-lg-5 px-4 px-lg-0">
-      <form onSubmit={sweetAlert}>
+      <form onSubmit={sendEmail}>
         {arrayInput.map((datos) => {
           return (
             <div className=" mb-1 mb-lg-3 row " key={datos.id}>
@@ -111,7 +118,6 @@ export default function ContacForm() {
           </div>
         </div>
         <div className="col-12 d-flex justify-content-lg-center ps-lg-5 ">
-     
           <div className="col-8 px-2 d-lg-flex justify-content-sm-evenly">
             <button
               type="submit"
