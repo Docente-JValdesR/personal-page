@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/personal-page/static/css/main.b50dea73.css",
+    "main.js": "/personal-page/static/js/main.22a6ae71.js",
+    "static/media/contact.mp4": "/personal-page/static/media/contact.5a5c808d669d04df26b1.mp4",
+    "static/media/home-3.jpg": "/personal-page/static/media/home-3.5c550488ec7e40f48e76.jpg",
+    "static/media/about-1.jpg": "/personal-page/static/media/about-1.3ded11f28a227fdeacf1.jpg",
+    "static/media/home.jpg": "/personal-page/static/media/home.3fc93db214ba13ecebab.jpg",
+    "static/media/home-1.jpg": "/personal-page/static/media/home-1.bed2dd4d2833915a67b8.jpg",
+    "static/media/home-2.jpg": "/personal-page/static/media/home-2.b5b1c11c76b4826dc41b.jpg",
+    "static/media/foto-perfil.png": "/personal-page/static/media/foto-perfil.39b3d9543270732805ab.png",
+    "static/media/ministerio.jpg": "/personal-page/static/media/ministerio.df5a9692ca032b9fd673.jpg",
+    "static/media/home-4.jpg": "/personal-page/static/media/home-4.be23a78c15d2fe5efdd7.jpg",
+    "static/media/about-2.jpg": "/personal-page/static/media/about-2.12efada8748333444db1.jpg",
+    "static/media/react.png": "/personal-page/static/media/react.a544fd8cf64d82898e91.png",
+    "static/media/mongodb.png": "/personal-page/static/media/mongodb.66dd398575f8ca2b4188.png",
+    "static/media/foto-verano.jpg": "/personal-page/static/media/foto-verano.02af45bbac63814ecbf8.jpg",
+    "static/media/about-3.jpg": "/personal-page/static/media/about-3.9623c0462085f565ee88.jpg",
+    "static/media/facso.png": "/personal-page/static/media/facso.8abcb58f02aa7c3c1ff8.png",
+    "static/media/movistar.png": "/personal-page/static/media/movistar.a9f1c838797e74cd1434.png",
+    "static/media/habilidad-1.png": "/personal-page/static/media/habilidad-1.b8e3c9b7dac9ce285f65.png",
+    "static/media/sepec.png": "/personal-page/static/media/sepec.a8f6a27901e815cf77c4.png",
+    "static/media/bootstrap.png": "/personal-page/static/media/bootstrap.87b2b41e1d703d5fc6c1.png",
+    "static/media/express.png": "/personal-page/static/media/express.375eee7619857b2ae37a.png",
+    "static/media/habilidad-2.png": "/personal-page/static/media/habilidad-2.41bd1c5733eb464a0cd9.png",
+    "static/media/css.png": "/personal-page/static/media/css.84de5dab5fab27f4161c.png",
+    "static/media/javascript.png": "/personal-page/static/media/javascript.940765f470ddd506af04.png",
+    "static/media/habilidad-3.png": "/personal-page/static/media/habilidad-3.9a3b32d610a8953ed231.png",
+    "static/media/html.png": "/personal-page/static/media/html.6e930594286d8afe4c79.png",
+    "static/media/nodejs.png": "/personal-page/static/media/nodejs.33f66c0643c9b607a0c2.png",
+    "static/media/ucsh.png": "/personal-page/static/media/ucsh.297fdc7eebdb7b0eec44.png",
+    "index.html": "/personal-page/index.html",
+    "main.b50dea73.css.map": "/personal-page/static/css/main.b50dea73.css.map",
+    "main.22a6ae71.js.map": "/personal-page/static/js/main.22a6ae71.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b50dea73.css",
+    "static/js/main.22a6ae71.js"
+  ]
+}
