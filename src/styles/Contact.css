@@ -1,0 +1,9 @@
+.video {
+  height: 100vh;
+  width: calc(height*0.5625);
+}
+
+
+.contact {
+  min-height: 100vh;
+}

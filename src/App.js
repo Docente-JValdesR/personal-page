@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes, useLocation } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import { useIsLarge } from "./hooks/useIsScreen";
+import { AnimatePresence } from "framer-motion";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Project from "./pages/Project";
 
-function App() {
+export default function App() {
+  const isLarge = useIsLarge();
+  const location = useLocation();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-color" style={{ overflow: "hidden" }}>
+      <Navbar props={isLarge} />
+      <AnimatePresence exitBeforeEnter>
+        <Routes key={location.pathname} location={location}>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About props={isLarge} />} />
+        <Route path="contact" element={<Contact props={isLarge} />} />
+        <Route path="project" element={<Project />} />
+        </Routes>
+      </AnimatePresence>
+
     </div>
   );
 }
-
-export default App;

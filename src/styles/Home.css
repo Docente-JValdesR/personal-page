@@ -1,0 +1,67 @@
+.title {
+    margin-top: 40%;
+    z-index: 100;
+}
+
+.img-1 {
+    background: url("../assets/home-1.jpg");
+}
+
+.img-2 {
+    background: url("../assets/home-2.jpg");
+}
+
+.img-3 {
+    background: url("../assets/home-3.jpg");
+}
+
+.img-4 {
+    background: url("../assets/home-4.jpg");
+}
+
+@media (max-width: 992px) {
+
+    .title-position {
+        position: absolute;
+        top: -10%
+    }
+
+    .title {
+        margin-top: 60%;
+        z-index: 100;
+    }
+
+    .img-home {
+        background: url("../assets/home.jpg");
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(79, 9, 131, 0.9);
+        background-blend-mode: soft-light;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.img-side {
+    background-size: 100% 100%;
+    width: 225px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shadow-custom {
+    background-color: rgba(79, 9, 131, 0.9);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center;
+}
+
+.shadow-custom:hover {
+    background-color: rgba(79, 9, 131, 0.6);
+    transition: 1s
+}

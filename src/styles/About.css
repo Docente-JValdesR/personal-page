@@ -1,0 +1,89 @@
+.about-1 {
+    background: url("../assets/about-1.jpg");
+
+}
+
+.about-2 {
+    background: url("../assets/about-2.jpg");
+}
+
+.about-3 {
+    background: url("../assets/about-3.jpg");
+}
+
+.about-main {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+    .img-about-1 {
+        background: url("../assets/about-1.jpg");
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(79, 9, 131, 0.9);
+        background-blend-mode: soft-light;
+        background-position: center;
+    }
+
+    .img-about-2 {
+        background: url("../assets/about-2.jpg");
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(79, 9, 131, 0.9);
+        background-blend-mode: soft-light;
+        background-position: center;
+    }
+
+    .img-about-3 {
+        background: url("../assets/about-3.jpg");
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(79, 9, 131, 0.9);
+        background-blend-mode: soft-light;
+        background-position: center;
+    }
+
+    .img-perfil {
+        max-width: 150px;
+    }
+
+    .img-about-custom {
+        width: 400px;
+    }
+}
+
+.img-perfil {
+    width: 200px;
+}
+
+.img-logo-curriculum {
+    width: 50px;
+}
+
+
+.img-logo-educacion {
+    width: 100px;
+    background: #fff;
+}
+
+.img-logo-telefonica {
+    width: 100px;
+    background: rgb(47, 47, 99);
+}
+
+.icon {
+    cursor: pointer;
+}
