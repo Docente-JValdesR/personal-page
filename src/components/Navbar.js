@@ -7,7 +7,7 @@ export default function Navbar(props) {
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top col-lg-2 col-12">
       <div className={ props.props ? "container-fluid":"container-fluid flex-column vh-100 justify-content-center"}>
         <Link className="navbar-brand" to="/">
-          <h1 className="ms-4">Profe José</h1>
+          <h1 className="ms-4">Profe Valdés</h1>
         </Link>
         <button
           className="navbar-toggler ms-auto"

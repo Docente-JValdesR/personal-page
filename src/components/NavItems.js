@@ -10,7 +10,7 @@ export const NavLinks = () => {
       </li>
       <li className="nav-item">
         <Link to="about" className="nav-link a">
-          Acerca de Mi
+          Sobre mi
         </Link>
       </li>
       <li className="nav-item">
@@ -20,7 +20,7 @@ export const NavLinks = () => {
       </li>
       <li className="nav-item">
         <Link to="contact" className="nav-link a">
-          Contactame
+          Contacto
         </Link>
       </li>
     </ul>

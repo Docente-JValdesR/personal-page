@@ -22,8 +22,6 @@ import ministerio from "../assets/ministerio.jpg";
 import sepec from "../assets/sepec.png";
 import ucsh from "../assets/ucsh.png";
 
-
-
 const print = (e) => {
   const ability = {
     IE: {
@@ -66,13 +64,16 @@ const AbilityContent = ({ props }) => {
     setState(print(props));
   }, [props]);
   return (
-    <motion.div 
-  
-    animate={{ opacity: [0,1] }}
-    transition={{ duration: 2 }}
-    key={state.title} className="text-start px-4 text-center">
-      <h2>{state.title}</h2>
-      <p>{state.description}</p>
+    <motion.div
+      animate={{ opacity: [0, 1] }}
+      transition={{ duration: 2 }}
+      key={state.title}
+      className="shadow-lg"
+    >
+      <motion.div className="text-start px-4 text-center card-body">
+        <h2 className="card-title">{state.title}</h2>
+        <p className="card-text">{state.description}</p>
+      </motion.div>
     </motion.div>
   );
 };
@@ -105,12 +106,20 @@ const AcademicEducation = (isOpen) => {
       <motion.div className="m-0 p-0" variants={item}>
         Licencia en Educación media con mención Matemática e Informática
         Educativa. UCSH
-        <img src={ucsh} alt="icono universidad católica silva henríquez" className="img-logo-educacion p-1" />
+        <img
+          src={ucsh}
+          alt="icono universidad católica silva henríquez"
+          className="img-logo-educacion p-1"
+        />
       </motion.div>
       <motion.div className="m-0 p-0" variants={item}>
         Magíster en Educación con mención en Informática Educativa (en proceso).
         UCHILE
-        <img src={facso} alt="icono facultad de ciencias sociales, universidad de chile" className="img-logo-educacion p-1" />
+        <img
+          src={facso}
+          alt="icono facultad de ciencias sociales, universidad de chile"
+          className="img-logo-educacion p-1"
+        />
       </motion.div>
     </motion.div>
   );
@@ -289,15 +298,31 @@ const ContinuousTraining = (isOpen) => {
       <motion.div variants={item}>
         Diplomado "Aprendizaje colaborativo" - Ministerio de Educación y
         Fundación Sepec (2021).
-        <img src={sepec} alt="logo fundación sepec" className="img-logo-educacion p-1" />
-        <img src={ministerio} alt="logo ministerio de educación" className="img-logo-educacion p-1" />
+        <img
+          src={sepec}
+          alt="logo fundación sepec"
+          className="img-logo-educacion p-1"
+        />
+        <img
+          src={ministerio}
+          alt="logo ministerio de educación"
+          className="img-logo-educacion p-1"
+        />
       </motion.div>
       <motion.div variants={item}>
         Curso "Programación por Bloques y Aprendizaje Basado en Proyectos como
         estrategia de implementación en el aula" - Plan Nacional Lenguaje
         Digital - Ministerio de Educación y Fundación Telefónica (2019).
-        <img src={movistar} alt="logo fundacion telefónica" className="img-logo-telefonica p-1" />
-        <img src={ministerio} alt="logo ministerio de educación" className="img-logo-educacion p-1" />
+        <img
+          src={movistar}
+          alt="logo fundacion telefónica"
+          className="img-logo-telefonica p-1"
+        />
+        <img
+          src={ministerio}
+          alt="logo ministerio de educación"
+          className="img-logo-educacion p-1"
+        />
       </motion.div>
     </motion.div>
   );
@@ -306,11 +331,9 @@ export const AboutMain = () => {
   return (
     <div className="col-lg-8 text-center about-main  img-about-1">
       <Link
-      
         to="ability"
-       
         smooth={true}
-        duration={800}
+        duration={300}
         className="text-decoration-none text-white "
       >
         <motion.div
@@ -336,7 +359,9 @@ export const AboutMain = () => {
                   estrategias y tecnologias que posibiliten cumplir mis
                   objetivos
                 </p>
-                <p className="d-none d-lg-block">Haz clic en este cuadro para descubrir un poco mas</p>
+                <p className="d-none d-lg-block">
+                  Haz clic en este cuadro para descubrir un poco mas
+                </p>
               </div>
             </div>
           </div>
@@ -515,7 +540,7 @@ export const AboutAbility = ({ props }) => {
                   to="curriculum"
                   spy={true}
                   smooth={true}
-                  duration={800}
+                  duration={300}
                   className="ms-2 text-white text-decoration-none fw-bold"
                 >
                   o haz clic aquí para revisar mi Curriculum
